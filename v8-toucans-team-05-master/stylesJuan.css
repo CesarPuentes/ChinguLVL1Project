@@ -1,0 +1,325 @@
+/*para todo el header */
+/*div superior */
+#page-wrapper{
+  background-color: #F0F8FF;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -8vw;
+
+  }
+
+
+header{
+  position: fixed;
+  margin: 20;
+  top: 0;
+  padding: 0;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  z-index:2;
+
+
+}
+
+header nav ul li a{
+  color:#8e8e87;
+}
+
+#header-img{
+  width: 40%;
+
+}
+
+#iconos-font-awesome{
+  color:white;
+  font-size: 28px;
+}
+
+/*que la parte superior no tenga color ni decoracion*/
+  ul {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+
+
+/*quitar el punto de una lista - bullet points -*/
+/*el padding de aqui meve los botones */
+li {
+      list-style-type: none;
+      padding-top: 50px;
+      padding-right: 10vw;
+
+}
+/*cuadrar que todos los dibujos queden al mismo nivel
+esto lo hago bajando todo al nivel del boton*/
+ #nav-header{
+  padding-left: 2vw;
+}
+
+.nav-link {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 2vh;
+  margin-left: -10vw;
+  font-size: 2.8em;
+/*  margin-right:0; */
+}
+li #boton-header{
+  /*padding-top: -10px;*/
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 2.8em;
+  border-radius: 5px;
+}
+/*responsive design navbar*/
+.nav-decoration-list{
+  font-size: 2.8em;
+}
+
+
+/*the responsive navbar is displayed at a given resolution*/
+@media(max-width:968px){
+  #container-div-nav-bar{display:none}
+
+  #header-img{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* the responsive navbar is hidden at normal resolution*/
+@media(min-width:968px){
+  #responsive-div-header{display:none}
+
+
+  #header-img{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*ends responsive design navbar*/
+
+
+/*hasta aqui va el header*/
+
+
+/*cuerpo de la pagina*/
+.dec{
+padding-top: 5%;
+}
+
+.decoracion{
+  padding:5%;
+}
+/*termina cuerpo de la pagina*/
+
+/*lo quite para dejar todo en un mismo div*/
+/*
+#titulo-Location{
+  margin:30px;
+
+}*/
+
+/*div contact us*/
+/*margins for the title*/
+#titulo-contacto{
+  margin:30px;
+}
+/*Space between inputs*/
+.text-space{
+  margin:20px 0 30px 0;
+}
+/*margin to the button*/
+#btn-contact-us{
+  margin: 30px;
+}
+/*increase the size of the buton*/
+.submit-contact-us{
+  width:300px;
+  height:50px;
+  font-size:1.4em;
+}
+/*fin div contact us*/
+
+/*start div Partners*/
+
+/*.title-partners{
+  margin:30px;
+}*/
+
+/*the color changing effect*/
+#img-partners{
+filter:grayscale(160%);
+}
+
+#img-partners:hover{
+filter:grayscale(0%);
+}
+
+
+
+/*end of div Partners*/
+
+
+
+/*mapa */
+
+#map{
+  height: 400px;
+  width: 100%;
+}
+#marcador{
+  width: 10%;
+}
+.title-location{
+    margin:30px;
+}
+
+/*fin del mapa*/
+
+/*comienza el footer*/
+footer{
+  background-color:#424242;
+
+}
+footer div{
+  color:white;
+}
+footer i {
+}
+
+footer p{
+  color:white;
+}
+
+#img-logo{
+  width: 8vw;
+  background-color: white;
+
+}
+
+.separador{
+  color:white;
+  padding:10px;
+  margin-left:10%;
+  margin-right: 10%;
+}
+/*termina el footer*/
+
+.footerLetters{  /*Cambia el tamaño de fuente en el footer*/
+  font-size: 2rem;
+}
+
+.fab { /*Cambia el tamaño de los iconos en el footer*/
+  position: relative;
+  font-size: 2vw;
+}
+
+
+
+/*titulo testimonials, our track record */
+#titulos-encabezados-industries{
+  margin-bottom: 60px;
+}
+#titulos-encabezados-partners{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#titulos-encabezados{
+  margin-bottom: 30px;
+}
+/*ends titulo testimonials */
+
+@media (min-width: 1324px) and (max-width: 1624px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+
+}
+
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1324px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+
+}
+
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+
+}
+
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+
+}
+
+@media (min-width: 10px) and (max-width: 800px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+}
+
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+
+}
+
+@media (max-width: 400px) {
+
+.partners-div{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+}
+#partners-sub-div img{
+  height: auto;
+  width: 100%;
+}
+}
